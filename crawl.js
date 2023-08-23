@@ -1,6 +1,6 @@
 const {JSDOM} = require('jsdom')
 
-async function crawlPage(currentURL){
+async function crawlPage(baseURL, currentURL, pages){
     console.log(`actively crawling: ${currentURL}`)
 
     try {
